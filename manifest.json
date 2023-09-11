@@ -1,5 +1,5 @@
 {
-    "name": "Convert an Email to a To-Do and Questions List",
+    "name": "Convert Text to a To-Do and Questions List",
     "version": "1.0.0",
     "description": "This is an extension to convert an email that was sent to you into a to-do list and a list of questions the sender has for you",
     "manifest_version": 3,

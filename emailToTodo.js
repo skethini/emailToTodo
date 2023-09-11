@@ -1,10 +1,12 @@
-async function hey() {    
+async function main() {    
     const text = document.getElementById("text");
-    const convert = document.querySelector('button');
+    const convert = document.getElementById('convert');
     const result = document.getElementById("result");
 
     async function changeHTML() {
+        console.log("Seeen");
         let inputValue = text.value; 
+        console.log(inputValue);
 
         fetch(`http://localhost:5000/get_variable?input=${inputValue}`)
             .then(response => response.json())
@@ -37,4 +39,4 @@ async function hey() {
     });
 }
 
-hey();
+main();

@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Email to To-do</title>
+    <title>To-do/Question List Generator</title>
+    <style>
+        body {
+            background-color: #ffe6a6;
+            font: Georgia;
+        }
+        h1 {
+            font-size: 24px;
+            color: #735200;
+            font: Georgia;
+        }
+        button {
+            background-color: #735200;
+            color: #fff5da;
+        }
+        input {
+            color: #735200;
+            background-color: #fff5da;
+            border-color: #735200;
+        }
+        input::placeholder {
+            color: #4e3800;
+        }
+        input, body, h1, button {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Email to To-do</h1>
-    <input id = "text" placeholder = "Enter the email's text"/>
+    <input id = "text" placeholder = "Enter text"/>
     <button id = "convert">Convert Email</button>
     <p id = "result"></p>
 </body>

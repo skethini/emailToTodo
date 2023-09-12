@@ -1,7 +1,7 @@
 {
     "name": "Convert Text to a To-Do and Questions List",
     "version": "1.0.0",
-    "description": "This is an extension to convert an email that was sent to you into a to-do list and a list of questions the sender has for you",
+    "description": "Classifies sentences as a request, question, or statement and outputs respective lists. Rephrases requests as to-do items.",
     "manifest_version": 3,
     "author": "Sumedha Kethini",
     "action": {

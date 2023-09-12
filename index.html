@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>To-do/Question List Generator</title>
+    <title>To-do List Generator</title>
     <style>
         body {
             background-color: #ffe6a6;
             font: Georgia;
+            width: 350px;
         }
         h1 {
             font-size: 24px;
@@ -20,6 +21,7 @@
             color: #735200;
             background-color: #fff5da;
             border-color: #735200;
+            width: 330px;
         }
         input::placeholder {
             color: #4e3800;
@@ -27,16 +29,13 @@
         input, body, h1, button {
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        .autoExpandInput {
-            width: 100%; 
-            box-sizing: border-box; 
-        }
+
     </style>
 </head>
 
 <body>
-    <h1>Email to To-do</h1>
-    <input id = "text" class = "autoExpandInput" placeholder = "Enter text"/>
+    <h1>To-do List Generator</h1>
+    <input id = "text" placeholder = "Enter text"/>
     <button id = "convert">Convert Email</button>
     <p id = "result"></p>
 </body>

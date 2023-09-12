@@ -17,13 +17,13 @@ async function main() {
                 const requests = variableValue[0];
                 const questions = variableValue[1];
 
-                result.innerHTML = "To-do List: <br>";
+                result.innerHTML = "<b>To-do List: </b><br>";
                 for (let i = 0; i < requests.length; i++) {
                     const stringValue = requests[i];
                     result.innerHTML += stringValue + "<br>";
                 }
 
-                result.innerHTML += "<br>Questions List: <br>";
+                result.innerHTML += "<br><b>Questions List: </b><br>";
                 for (let i = 0; i < questions.length; i++) {
                     const stringValue = questions[i];
                     result.innerHTML += stringValue + "<br>";
@@ -38,17 +38,6 @@ async function main() {
         changeHTML();
     });
 
-    $(document).ready(function() {
-        var inputElement = $('#text');
-    
-        function updateInputWidth() {
-            var text = inputElement.val(); 
-            var textWidth = inputElement[0].scrollWidth; 
-            inputElement.css('width', textWidth + 'px');
-        }
-    
-        inputElement.on('input', updateInputWidth);
-    });
 }
 
 main();

@@ -27,12 +27,16 @@
         input, body, h1, button {
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        .autoExpandInput {
+            width: 100%; 
+            box-sizing: border-box; 
+        }
     </style>
 </head>
 
 <body>
     <h1>Email to To-do</h1>
-    <input id = "text" placeholder = "Enter text"/>
+    <input id = "text" class = "autoExpandInput" placeholder = "Enter text"/>
     <button id = "convert">Convert Email</button>
     <p id = "result"></p>
 </body>

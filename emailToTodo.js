@@ -37,6 +37,18 @@ async function main() {
     convert.addEventListener('click', async () => {
         changeHTML();
     });
+
+    $(document).ready(function() {
+        var inputElement = $('#text');
+    
+        function updateInputWidth() {
+            var text = inputElement.val(); 
+            var textWidth = inputElement[0].scrollWidth; 
+            inputElement.css('width', textWidth + 'px');
+        }
+    
+        inputElement.on('input', updateInputWidth);
+    });
 }
 
 main();
